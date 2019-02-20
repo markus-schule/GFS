@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display:900|Open+Sans');
+script {
+  height: 200px;
+  width: 50%;
+  background-color: grey;
+}
+  
 body {
   background-color: lightblue;
 }
