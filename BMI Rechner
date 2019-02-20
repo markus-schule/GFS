@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script language="JavaScript">
+    function calculateBmi() {
+    var Gewicht = document.bmiForm.weight.value
+    var Grösse = document.bmiForm.height.value
+    if(Gewicht > 0 && Grösse > 0){	
+    var finalBmi = Gewicht/(Grösse/100*Grösse/100)
+    document.bmiForm.bmi.value = finalBmi
+    if(finalBmi < 18.5){
+    document.bmiForm.meaning.value = "Sie sind zu dünn.."
+    }
+    if(finalBmi > 18.5 && finalBmi < 25){
+    document.bmiForm.meaning.value = "Sie sind gesund."
+    }
+    if(finalBmi > 25){
+    document.bmiForm.meaning.value = "Sie sind übergewichtig."
+    }
+    }
+    else{
+    alert("Bitte füllen Sie das Dokument mit korrekten Angaben aus")
+    }
+    }
+    </script>
+  </head>
+  <body>
+    <form name="bmiForm">
+      Ihr Gewicht(kg): <input type="text" name="Gewicht" size="10"><br />
+      Ihre Grösse(cm): <input type="text" name="Grösse" size="10"><br />
+      <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+      Ihr BMI: <input type="text" name="bmi" size="10"><br />
+      Das Bedeutet: <input type="text" name="meaning" size="25"><br />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
