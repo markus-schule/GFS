@@ -4,9 +4,9 @@
     <script language="JavaScript">
     function calculateBmi() {
     var Gewicht = document.bmiForm.weight.value
-    var Grösse = document.bmiForm.height.value
+    var Groesse = document.bmiForm.height.value
     if(Gewicht > 0 && Grösse > 0){	
-    var finalBmi = Gewicht/(Grösse/100*Grösse/100)
+    var finalBmi = Gewicht/(Groesse/100*Groesse/100)
     document.bmiForm.bmi.value = finalBmi
     if(finalBmi < 18.5){
     document.bmiForm.meaning.value = "Sie sind zu dünn.."
@@ -30,7 +30,7 @@
     <p>Bitte geben Sie Ihr Gewicht und Ihre Grösse an um den BMI zu berechnen. Bei Falschen Eingaben werden Sie aufgefordert dies zu wiederholen.</p>
     <form name="bmiForm">
       Ihr Gewicht(kg): <input type="text" name="Gewicht" size="10"><br />
-      Ihre Grösse(cm): <input type="text" name="Grösse" size="10"><br />
+      Ihre Grösse(cm): <input type="text" name="Groesse" size="10"><br />
       <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
       Ihr BMI: <input type="text" name="bmi" size="10"><br />
       Das Bedeutet: <input type="text" name="meaning" size="25"><br />
