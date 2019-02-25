@@ -2,6 +2,7 @@
 
 body {
   background-color: black;
+  color: green;
 }
 
 javascript {
@@ -13,6 +14,6 @@ javascript {
 
 h1 {
   text-align: center;
-  color: navy;
+  color: green;
   margin-left: 20px;
 }
