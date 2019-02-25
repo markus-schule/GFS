@@ -6,10 +6,7 @@ body {
 }
 
 .bmiscript {
-  width: 300px;
-  border: 25px solid MediumSeaGreen;
-  padding: 25px;
-  margin: 25px;
+  position: relative;
 }
 
 h1 {
