@@ -2,18 +2,18 @@
 
 body {
   background-color: black;
-  color: green;
+  color: MediumSeaGreen;
 }
 
 .bmiscript {
   width: 300px;
-  border: 25px solid green;
+  border: 25px solid MediumSeaGreen;
   padding: 25px;
   margin: 25px;
 }
 
 h1 {
   text-align: center;
-  color: green;
+  color: MediumSeaGreen;
   margin-left: 20px;
 }
